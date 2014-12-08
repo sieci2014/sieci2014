@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Biblioteka</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_glowna">Biblioteka</string>
+    <string name="title_activity_wypozyczenia">Moje wypożyczenia</string>
+    <string name="title_activity_przegladaj">Przeglądaj pozycje</string>
+    <string name="title_activity_przegladaj_ksiazka">Przegladaj pozycje</string>
+    <string name="title_activity_przegladaj_muzyka">Przegladaj pozycje</string>
+    <string name="title_activity_przegladaj_film">Przegladaj pozycje</string>
+    <string name="title_activity_znajdz">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_muzyka">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_ksiazka">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_film">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_ksiazka2">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_muzyka2">Znajdz pozycje</string>
+    <string name="title_activity_znajdz_film2">Znajdz pozycje</string>
+    <string name="title_activity_test">Test</string>
+
+</resources>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.biblioteka"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="19" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.example.biblioteka.Logowanie"
+            android:label="@string/app_name"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Glowna"
+            android:label="@string/title_activity_glowna" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Wypozyczenia"
+            android:label="@string/title_activity_wypozyczenia" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Przegladaj"
+            android:label="@string/title_activity_przegladaj" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Przegladaj_ksiazka"
+            android:label="@string/title_activity_przegladaj_ksiazka" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Przegladaj_muzyka"
+            android:label="@string/title_activity_przegladaj_muzyka" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Przegladaj_film"
+            android:label="@string/title_activity_przegladaj_film" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz"
+            android:label="@string/title_activity_znajdz" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_muzyka"
+            android:label="@string/title_activity_znajdz_muzyka" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_ksiazka"
+            android:label="@string/title_activity_znajdz_ksiazka" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_film"
+            android:label="@string/title_activity_znajdz_film" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_ksiazka2"
+            android:label="@string/title_activity_znajdz_ksiazka2" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_muzyka2"
+            android:label="@string/title_activity_znajdz_muzyka2" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Znajdz_film2"
+            android:label="@string/title_activity_znajdz_film2" >
+        </activity>
+        <activity
+            android:name="com.example.biblioteka.Test"
+            android:label="@string/title_activity_test" >
+        </activity>
+    </application>
+
+</manifest>

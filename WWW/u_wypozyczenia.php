@@ -1,8 +1,12 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<?php 
+<?php
 require "config.php"; 
 connection(); 
 session_start();
+if(!$_SESSION['id'])
+{
+	header("Refresh: 0; URL=index.php");
+}
 ?>
 <html>
 <head>
@@ -52,7 +56,7 @@ session_start();
 				
 				<?php
 										
-					$SQL = 'SELECT k.Tytul_ks, zk.ID_ks, zk.ID_zam, zk.Data_zam, zk.Data_do_kiedy FROM Zamowienie_Ksiazka zk, Zamowienie z, ksiazka k WHERE z.ID='.$_SESSION["id"].' AND zk.ID_zam=z.ID_zam AND k.ID_ks = zk.ID_ks';
+					$SQL = 'SELECT k.Tytul_ks, zk.ID_ks, zk.ID_zam, zk.Data_zam, zk.Data_do_kiedy FROM zamowienie_ksiazka zk, zamowienie z, ksiazka k WHERE z.ID='.$_SESSION["id"].' AND zk.ID_zam=z.ID_zam AND k.ID_ks = zk.ID_ks';
 					
 					
 					

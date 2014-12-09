@@ -3,6 +3,10 @@
 require "config.php"; 
 connection(); 
 session_start();
+if(!$_SESSION['id'])
+{
+	header("Refresh: 0; URL=index.php");
+}
 ?>
 <html>
 <head>

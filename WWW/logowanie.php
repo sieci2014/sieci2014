@@ -18,7 +18,7 @@ if (mysql_num_rows($result))
 	
 
 	$uprawnienia = mysql_fetch_assoc($result);
-	$_SESSION['zalogowany'] = true;
+	$_SESSION['log'] = true;
 	$_SESSION['id'] = $uprawnienia["ID"];
 
 	if ($uprawnienia["Rodzaj_uzytkownika"]=="czytelnik")

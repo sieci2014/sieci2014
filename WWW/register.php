@@ -1,7 +1,11 @@
 <?php
-session_start();
 require "config.php"; 
-connection();
+connection(); 
+session_start();
+if(!$_SESSION['id'])
+{
+	header("Refresh: 0; URL=index.php");
+}
 
 if ($_POST['send'] == 1) 
 {
@@ -19,6 +23,8 @@ $nrmieszkania = mysql_real_escape_string(htmlspecialchars($_POST['nrmieszkania']
 $miasto = mysql_real_escape_string(htmlspecialchars($_POST['miasto']));
 $kodpocztowy = mysql_real_escape_string(htmlspecialchars($_POST['kodpocztowy']));
 
+$pass=sha1($pass);
+$pass_v=sha1($pass_v);
 /**
 * Sprawd¼ czy podany przez u¿ytkownika email, pesel lub login ju¿ istnieje
 */

@@ -8,6 +8,7 @@ $id=$_POST['zwroc'];
 //sprawdzenie loginu i hasla
 $sql = "DELETE zamowienie , zamowienie_ksiazka  FROM zamowienie  INNER JOIN zamowienie_ksiazka WHERE zamowienie.ID_zam = zamowienie_ksiazka.ID_zam AND zamowienie.ID_zam = '$id'";
 $result = mysql_query($sql)	or die(mysql_error());
+mysql_query('UPDATE Ksiazka SET status=0 WHERE ID_ks='.$id.'');
 //w razie poprawnego zalogowania zapisz dane w sesji i przejdz do strony glownej
 	header("Refresh: 0; URL=p_zwrot.php");
 ?>
